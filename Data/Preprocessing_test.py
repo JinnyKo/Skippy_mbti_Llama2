@@ -48,7 +48,7 @@ def mbti_count(output_file_path):
                     mbti_counts[mbti_type] += 1
                 else:
                     mbti_counts[mbti_type] = 1
-    return mbti_counts
+    print(mbti_counts)
 
 output_file_path = "result_data.txt"
 mbti_counts = mbti_count(output_file_path)
