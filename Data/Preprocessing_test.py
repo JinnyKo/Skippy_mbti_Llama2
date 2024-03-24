@@ -1,36 +1,54 @@
-mbti_types = ["INTJ", "INTP", "ENTJ", "ENTP", "INFJ", "INFP", "ENFJ", "ENFP","ISTJ", "ISFJ", "ESTJ", "ESFJ", "ISTP", "ISFP", "ESTP", "ESFP"]
+import traceback
 
 def extract_mbti_and_conversations(input_file_path):
+    mbti_types = ["INTJ", "INTP", "ENTJ", "ENTP", "INFJ", "INFP", "ENFJ", "ENFP", "ISTJ", "ISFJ", "ESTJ", "ESFJ", "ISTP", "ISFP", "ESTP", "ESFP"]
     with open(input_file_path, "r", encoding="utf-8") as file:
         conversation = ""  
-        with open("conversation_data.txt", "w", encoding="utf-8") as output_file:
-            for line in file:
-                # 대화 시작인지 확인, 그 줄에 ] 도 같이 있는지
-                if line.startswith("[") and "]" in line:
+        with open("result_data.txt", "w", encoding="utf-8") as output_file:
+            #줄 번호 같이 해서 오류 나는 line 찾기 
+            for line_number, line in enumerate(file, start=1):
+                try:
+                    # 대화 시작인지 확인, 그 줄에 ] 도 같이 있는지
+                    if line.startswith("[") and "]" in line:
+                        #ex) [Jinny/ENTP] [오전 11:11] 배고파요 { '[' 기준으로 나눔} => ["", "Jinny/ENTP]", "오전 11:11] 배고파요"] => [1]에서 비교 
+                        temp = line.split("[")
+                        mbti_part = temp[1]
 
-                   #ex) [Jinny/ENTP] [오전 11:11] 배고파요 { '[' 기준으로 나눔} => ["", "Jinny/ENTP]", "오전 11:11] 배고파요"] => [1]에서 비교 
-                    temp = line.split("[")
-                    mbti_part = temp[1]
+                        mbti = ""
+                        for i in mbti_types:
+                            # ENTP-a 이런 유형은 일단 제외 (-a 빼고 앞에 4글자만 가져오던가...)
+                            if i in mbti_part.upper():
+                                mbti = i
+                                break
 
-                    mbti = ""
-                    for i in mbti_types:
-                        # ENTP-a 이런 유형은 일단 제외 (-a 빼고 앞에 4글자만 가져오던가...)
-                        if i in mbti_part.upper():
-                            mbti = i
-                            break
-
-                    conversation_part = line.split("] ")[1].strip()
-                    #대화 내용 연결
-                    conversation += conversation_part + " "
-                    
-                    # 대화 끝나는지 (다음 [ 나오기 전까지)
-                    if "[" in line:
-                        output_file.write("MBTI: " + mbti + "\n")
-                        output_file.write("Conversation: " + conversation + "\n")
+                        conversation_part = line.split("]")[2].strip()
+                        #대화 내용 연결
+                        conversation += conversation_part + " "
                         
-                        # 대화 변수 초기화
-                        conversation = ""
-
+                        # 대화 끝나는지 확인 후 초기화 (다음 [ 나오기 전까지)
+                        if "[" in line:
+                            output_file.write("MBTI: " + mbti + "\n")
+                            output_file.write("Conversation: " + conversation + "\n")
+                            conversation = ""
+                except IndexError as e: 
+                    print(f"Error line {line_number}: {0}")
+                    #trceback 모듈: 전체 오류 출력 
+                    traceback.print_exc()
 
 input_file_path = "Data\OriginData.txt"
 extract_mbti_and_conversations(input_file_path)
+
+def mbti_count(output_file_path):
+    mbti_counts = {} 
+    with open(output_file_path,"r", encoding="utf-8") as file:
+        for line in file: 
+            if line.startswith("MBTI:"):
+                mbti_type = line.split(":")[1].strip()
+                if mbti_type in mbti_counts:
+                    mbti_counts[mbti_type] += 1
+                else:
+                    mbti_counts[mbti_type] = 1
+    return mbti_counts
+
+output_file_path = "result_data.txt"
+mbti_counts = mbti_count(output_file_path)
