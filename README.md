@@ -1,7 +1,8 @@
 ### A chatbot service that users can talk to an AI based on 16 MBTI types.
 
 ## 프로젝트 개요
-
+- ### LLAMA 모델을 활용하여 16개의 MBTI 타입 별 한국어 채팅 데이터를 학습시키고, 파인튜닝을 통해 각 MBTI 성격과 특성의 맞게 응답하는 모델 학습. 
+   
 
 ## LLAMA 1 / LLAMA 2 논문 분석
 - ###  Pretrained data: LLAMA 2 에서는 LLAMA 1과 거의 비슷한 pretraining setting 과 model architectue를 사용하였다.
@@ -12,11 +13,22 @@
      - CommonCrawl (67.0%): Language Classification 해서 영어로 된 데이터만 사용 
      - Github (4.5%): 코드 데이터 학습, Apache 라이센스, MIT 라이센스 
      
-- ### Result "Common Senese Reasoning" 상식적으로 추론하는 성능
+- ### Result "Common Senese Reasoning" 상식적으로 추론하는 성능 [LLAMA 1 ] 
 
  > ![image](https://github.com/JinnyKo/Skippy_mbti_Llama2/assets/93627969/85a952ef-671e-4c98-b957-1f333ccbd5bd)
 
+   - 비교적 적은 파라미터로도 파라미터 수가 압도적으로 많은 모델들의 성능에 비해 대적할 만 하다.
+- ### Overall performances
+    > ![image](https://github.com/JinnyKo/Skippy_mbti_Llama2/assets/93627969/1b29b440-b111-4fd9-86fb-ee925f238f7e)
+ 
+
   
+- 인퍼런스비용에 대하여.. 
+
+
+
+
+
 
 
 
