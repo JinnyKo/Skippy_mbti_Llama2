@@ -3,7 +3,8 @@
    
 ## 접기 시작 <details><summary>접기/펼치기</summary> 접은 내용(ex 소스 코드)</details> ## 접기 끝
 
-### <details><summary LLAMA 1 / LLAMA 2 논문 
+###  LLAMA 1 / LLAMA 2 논문 
+<details><summary>
 - ####  Pretrained data: LLAMA 2 에서는 LLAMA 1과 거의 비슷한 pretraining setting 과 model architectue를 사용하였다.
   
  >  ![image](https://github.com/JinnyKo/Skippy_mbti_Llama2/assets/93627969/6160bdf0-b82d-4c6a-b08c-24d3aab9053b)
@@ -32,7 +33,7 @@
 
   
 - 인퍼런스비용에 대하여.. 
-</details>
+</summary></details>
 
 ### LLaMA 1 vs GPT 
 => 두 모델 모두 Decoder only Transformer 아키텍처 라는 점에선 마이너한 부분들을 제외하면 큰 차이 없음.
