@@ -5,11 +5,13 @@
 ###  2. LLAMA 1 / LLAMA 2 논문 분석
 <details>
 <summary> Pretrained data: </summary>
-- ###  LLAMA 2 에서는 LLAMA 1과 거의 비슷한 pretraining setting 과 model architectue를 사용하였다.
+- ### LLAMA 2 에서는 LLAMA 1과 거의 비슷한 pretraining setting 과 model architectue를 사용하였다.
+   
  >  ![image](https://github.com/JinnyKo/Skippy_mbti_Llama2/assets/93627969/6160bdf0-b82d-4c6a-b08c-24d3aab9053b)
       (LLAMA1 pretraining Data)
      - CommonCrawl (67.0%): Language Classification 해서 영어로 된 데이터만 사용 
-     - Github (4.5%): 코드 데이터 학습, Apache 라이센스, MIT 라이센스 
+     - Github (4.5%): 코드 데이터 학습, Apache 라이센스, MIT 라이센스
+
  > ![image](https://github.com/JinnyKo/Skippy_mbti_Llama2/assets/93627969/3ee947a1-aa10-4cfb-88b2-335c1dbc00e6)
 
     - LLAMA 1 의 논문에서 truthful result를 보면 올바른 답을 할 확률 이 낮은것을 지적하면서, 
