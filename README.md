@@ -12,6 +12,13 @@
      (LLAMA1 pretraining Data)
      - CommonCrawl (67.0%): Language Classification 해서 영어로 된 데이터만 사용 
      - Github (4.5%): 코드 데이터 학습, Apache 라이센스, MIT 라이센스 
+ > ![image](https://github.com/JinnyKo/Skippy_mbti_Llama2/assets/93627969/3ee947a1-aa10-4cfb-88b2-335c1dbc00e6)
+
+    - LLAMA 1 의 논문에서 truthful result를 보면 올바른 답을 할 확률 이 낮은것을 지적하면서, hallucinations을 극복하진 못했다고 언급하고 있는데, LLAMA 2는 이를 극복하기 위한 new data set 을 구성한것 같다. 
+    
+> ![image](https://github.com/JinnyKo/Skippy_mbti_Llama2/assets/93627969/7652f7d5-de05-4a71-ac0e-0e0c35c2b298)
+    - LLAMA2 에서도 어쨌든,,완벽하게 해결되진 않을 것 같다. 
+ 
      
 - ### Result "Common Senese Reasoning" 상식적으로 추론하는 성능 [LLAMA 1 ] 
 
