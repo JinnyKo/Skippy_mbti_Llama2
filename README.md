@@ -5,6 +5,7 @@
 ###  2. LLAMA 1 / LLAMA 2 논문 분석
 <details>
 <summary> Pretrained data: </summary>
+   
  ### LLAMA 2 에서는 LLAMA 1과 거의 비슷한 pretraining setting 과 model architectue를 사용하였다.
    
  >  ![image](https://github.com/JinnyKo/Skippy_mbti_Llama2/assets/93627969/6160bdf0-b82d-4c6a-b08c-24d3aab9053b)
@@ -42,7 +43,7 @@
 
 
 ### 3. LLaMA 1 vs GPT 
-=> 두 모델 모두 Decoder only Transformer 아키텍처 라는 점에선 마이너한 부분들을 제외하면 큰 차이 없음.
+ > 두 모델 모두 Decoder only Transformer 아키텍처 라는 점에선 마이너한 부분들을 제외하면 큰 차이 없음.
 
 - #### LLaMA 1
    - Unsuperviese Pretraining, 이전 까지의 토큰을 이용해서 다음 토큰을 예측하는 방식
