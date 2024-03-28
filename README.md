@@ -53,6 +53,12 @@
    - Size: 175B 
    - GPT2 부터는 가중치 오픈 하지 않음, GPT3 부터는 모델 자체도 공개 안됨. 
 
+### Config
+![image](https://github.com/JinnyKo/Skippy_mbti_Llama2/assets/93627969/9350c5c4-b23f-4876-b369-615c90af55c3)
+(Llama1 config)
+
+![image](https://github.com/JinnyKo/Skippy_mbti_Llama2/assets/93627969/6bc1b095-3ace-4054-8de3-4a0bbbdd5503)
+(Llama2 config)
 
 
 
