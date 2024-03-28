@@ -3,8 +3,8 @@
    
 ###  LLAMA 1 / LLAMA 2 논문 
 <details>
-<summary> ####  Pretrained data: LLAMA 2 에서는 LLAMA 1과 거의 비슷한 pretraining setting 과 model architectue를 사용하였다. </summary>
-  
+<summary> Pretrained data: </summary>
+- ###  LLAMA 2 에서는 LLAMA 1과 거의 비슷한 pretraining setting 과 model architectue를 사용하였다.
  >  ![image](https://github.com/JinnyKo/Skippy_mbti_Llama2/assets/93627969/6160bdf0-b82d-4c6a-b08c-24d3aab9053b)
       (LLAMA1 pretraining Data)
      - CommonCrawl (67.0%): Language Classification 해서 영어로 된 데이터만 사용 
@@ -18,14 +18,18 @@
     - LLAMA2 에서도 어쨌든,,완벽하게 해결되진 않을 것 같다. 
 </details> 
      
-- #### Result "Common Senese Reasoning" 상식적으로 추론하는 성능 [LLAMA 1 ] 
+<details>
+<summary> 성능 평가 </summary>
 
+- ### Result "Common Senese Reasoning" 상식적으로 추론하는 성능
  > ![image](https://github.com/JinnyKo/Skippy_mbti_Llama2/assets/93627969/85a952ef-671e-4c98-b957-1f333ccbd5bd)
 
       - 비교적 적은 파라미터로도 파라미터 수가 압도적으로 많은 모델들의 성능에 비해 대적할 만 하다.
       
 - #### Overall performances
     > ![image](https://github.com/JinnyKo/Skippy_mbti_Llama2/assets/93627969/1b29b440-b111-4fd9-86fb-ee925f238f7e)
+
+</details>
  
 
   
