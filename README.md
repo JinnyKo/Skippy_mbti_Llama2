@@ -1,11 +1,11 @@
 ### A chatbot service that users can talk to an AI based on 16 MBTI types.
 
-## 프로젝트 개요
-- ### LLAMA 모델을 활용하여 16개의 MBTI 타입 별 한국어 채팅 데이터를 학습시키고, 파인튜닝을 통해 각 MBTI 성격과 특성의 맞게 응답하는 모델 학습. 
+###  프로젝트 개요
+- #### LLAMA 모델을 활용하여 16개의 MBTI 타입 별 한국어 채팅 데이터를 학습시키고, 파인튜닝을 통해 각 MBTI 성격과 특성의 맞게 응답하는 모델 학습. 
    
 
-## LLAMA 1 / LLAMA 2 논문
-- ###  Pretrained data: LLAMA 2 에서는 LLAMA 1과 거의 비슷한 pretraining setting 과 model architectue를 사용하였다.
+### LLAMA 1 / LLAMA 2 논문
+- ####  Pretrained data: LLAMA 2 에서는 LLAMA 1과 거의 비슷한 pretraining setting 과 model architectue를 사용하였다.
   
  >  ![image](https://github.com/JinnyKo/Skippy_mbti_Llama2/assets/93627969/6160bdf0-b82d-4c6a-b08c-24d3aab9053b)
 
@@ -21,13 +21,13 @@
     - LLAMA2 에서도 어쨌든,,완벽하게 해결되진 않을 것 같다. 
  
      
-- ### Result "Common Senese Reasoning" 상식적으로 추론하는 성능 [LLAMA 1 ] 
+- #### Result "Common Senese Reasoning" 상식적으로 추론하는 성능 [LLAMA 1 ] 
 
  > ![image](https://github.com/JinnyKo/Skippy_mbti_Llama2/assets/93627969/85a952ef-671e-4c98-b957-1f333ccbd5bd)
 
       - 비교적 적은 파라미터로도 파라미터 수가 압도적으로 많은 모델들의 성능에 비해 대적할 만 하다.
       
-- ### Overall performances
+- #### Overall performances
     > ![image](https://github.com/JinnyKo/Skippy_mbti_Llama2/assets/93627969/1b29b440-b111-4fd9-86fb-ee925f238f7e)
  
 
@@ -35,17 +35,17 @@
 - 인퍼런스비용에 대하여.. 
 
 
-## LLaMA 1 vs GPT 
+### LLaMA 1 vs GPT 
 => 두 모델 모두 Decoder only Transformer 아키텍처 라는 점에선 마이너한 부분들을 제외하면 큰 차이 없음.
 
-- ### LLaMA 1
+- #### LLaMA 1
    - Unsuperviese Pretraining, 이전 까지의 토큰을 이용해서 다음 토큰을 예측하는 방식
    - public data training 
    - 데이터 규모 비교적 큼
    - Size: 7~65B (모델의 사이즈는 줄이고, 데이터는 늘리는)
    - 모델,가중치 오픈 (1의 경우는 학술적 목적에 한해) 
  
-- ### GPT
+- #### GPT
    - Unsupervised pretraining
    - supervised finetuning (사람이 개입해서 finetuning)
    - reinforcement learning w. human feedback  (사람이 개입해서 평가)
@@ -58,7 +58,7 @@
 
 
 
-## References 
+### References 
 - https://arxiv.org/pdf/2302.13971.pdf (LLAMA 1 paper: LLaMA: Open and Efficient Foundation Language Models
 Hugo Touvron∗
 , Thibaut Lavril∗
