@@ -12,8 +12,22 @@
      - CommonCrawl (67.0%): Language Classification 해서 영어로 된 데이터만 사용 
      - Github (4.5%): 코드 데이터 학습, Apache 라이센스, MIT 라이센스 
      
- 
+- ### Result "Common Senese Reasoning" 상식적으로 추론하는 성능
+
+ > ![image](https://github.com/JinnyKo/Skippy_mbti_Llama2/assets/93627969/85a952ef-671e-4c98-b957-1f333ccbd5bd)
+
   
 
 
 
+## References 
+- https://arxiv.org/pdf/2302.13971.pdf (LLAMA 1 paper: LLaMA: Open and Efficient Foundation Language Models
+Hugo Touvron∗
+, Thibaut Lavril∗
+, Gautier Izacard∗
+, Xavier Martinet
+Marie-Anne Lachaux, Timothee Lacroix, Baptiste Rozière, Naman Goyal
+Eric Hambro, Faisal Azhar, Aurelien Rodriguez, Armand Joulin
+Edouard Grave∗
+, Guillaume Lample∗
+Meta AI) 
