@@ -17,7 +17,8 @@
 
  > ![image](https://github.com/JinnyKo/Skippy_mbti_Llama2/assets/93627969/85a952ef-671e-4c98-b957-1f333ccbd5bd)
 
-   - 비교적 적은 파라미터로도 파라미터 수가 압도적으로 많은 모델들의 성능에 비해 대적할 만 하다.
+      - 비교적 적은 파라미터로도 파라미터 수가 압도적으로 많은 모델들의 성능에 비해 대적할 만 하다.
+      
 - ### Overall performances
     > ![image](https://github.com/JinnyKo/Skippy_mbti_Llama2/assets/93627969/1b29b440-b111-4fd9-86fb-ee925f238f7e)
  
