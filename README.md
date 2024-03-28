@@ -64,11 +64,9 @@
 <details>
 <summary> Llama config  </summary>
 
-   ### (Llama1 config)
+   ### (Llama1,2 config 같음)
 ![image](https://github.com/JinnyKo/Skippy_mbti_Llama2/assets/93627969/9350c5c4-b23f-4876-b369-615c90af55c3)
 
-### (Llama2 config)
-![image](https://github.com/JinnyKo/Skippy_mbti_Llama2/assets/93627969/6bc1b095-3ace-4054-8de3-4a0bbbdd5503)
 
 </details>
 
