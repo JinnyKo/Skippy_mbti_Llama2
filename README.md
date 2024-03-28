@@ -1,10 +1,9 @@
-### A chatbot service that users can talk to an AI based on 16 MBTI types.
-
 ###  프로젝트 개요
-- #### LLAMA 모델을 활용하여 16개의 MBTI 타입 별 한국어 채팅 데이터를 학습시키고, 파인튜닝을 통해 각 MBTI 성격과 특성의 맞게 응답하는 모델 학습. 
+- #### LLAMA 모델을 활용하여 16개의 MBTI 타입 별 한국어 채팅 데이터를 학습시키고, 파인튜닝을 통해 각 MBTI 성격과 특성의 맞게 응답하는 모델 학습. A chatbot service that users can talk to an AI based on 16 MBTI types.
    
+## 접기 시작 <details><summary>접기/펼치기</summary> 접은 내용(ex 소스 코드)</details> ## 접기 끝
 
-### LLAMA 1 / LLAMA 2 논문
+### <details><summary LLAMA 1 / LLAMA 2 논문 
 - ####  Pretrained data: LLAMA 2 에서는 LLAMA 1과 거의 비슷한 pretraining setting 과 model architectue를 사용하였다.
   
  >  ![image](https://github.com/JinnyKo/Skippy_mbti_Llama2/assets/93627969/6160bdf0-b82d-4c6a-b08c-24d3aab9053b)
@@ -33,7 +32,7 @@
 
   
 - 인퍼런스비용에 대하여.. 
-
+</details>
 
 ### LLaMA 1 vs GPT 
 => 두 모델 모두 Decoder only Transformer 아키텍처 라는 점에선 마이너한 부분들을 제외하면 큰 차이 없음.
