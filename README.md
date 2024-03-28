@@ -4,7 +4,7 @@
 - ### LLAMA 모델을 활용하여 16개의 MBTI 타입 별 한국어 채팅 데이터를 학습시키고, 파인튜닝을 통해 각 MBTI 성격과 특성의 맞게 응답하는 모델 학습. 
    
 
-## LLAMA 1 / LLAMA 2 논문 분석
+## LLAMA 1 / LLAMA 2 논문
 - ###  Pretrained data: LLAMA 2 에서는 LLAMA 1과 거의 비슷한 pretraining setting 과 model architectue를 사용하였다.
   
  >  ![image](https://github.com/JinnyKo/Skippy_mbti_Llama2/assets/93627969/6160bdf0-b82d-4c6a-b08c-24d3aab9053b)
@@ -14,7 +14,8 @@
      - Github (4.5%): 코드 데이터 학습, Apache 라이센스, MIT 라이센스 
  > ![image](https://github.com/JinnyKo/Skippy_mbti_Llama2/assets/93627969/3ee947a1-aa10-4cfb-88b2-335c1dbc00e6)
 
-    - LLAMA 1 의 논문에서 truthful result를 보면 올바른 답을 할 확률 이 낮은것을 지적하면서, hallucinations을 극복하진 못했다고 언급하고 있는데, LLAMA 2는 이를 극복하기 위한 new data set 을 구성한것 같다. 
+    - LLAMA 1 의 논문에서 truthful result를 보면 올바른 답을 할 확률 이 낮은것을 지적하면서, 
+    hallucinations을 극복하진 못했다고 언급하고 있는데, LLAMA 2는 이를 극복하기 위한 new data set 을 구성한것 같다. 
     
 > ![image](https://github.com/JinnyKo/Skippy_mbti_Llama2/assets/93627969/7652f7d5-de05-4a71-ac0e-0e0c35c2b298)
     - LLAMA2 에서도 어쨌든,,완벽하게 해결되진 않을 것 같다. 
@@ -34,6 +35,23 @@
 - 인퍼런스비용에 대하여.. 
 
 
+## LLaMA 1 vs GPT 
+=> 두 모델 모두 Decoder only Transformer 아키텍처 라는 점에선 마이너한 부분들을 제외하면 큰 차이 없음.
+
+- ### LLaMA 1
+   - Unsuperviese Pretraining, 이전 까지의 토큰을 이용해서 다음 토큰을 예측하는 방식
+   - public data training 
+   - 데이터 규모 비교적 큼
+   - Size: 7~65B (모델의 사이즈는 줄이고, 데이터는 늘리는)
+   - 모델,가중치 오픈 (1의 경우는 학술적 목적에 한해) 
+ 
+- ### GPT
+   - Unsupervised pretraining
+   - supervised finetuning (사람이 개입해서 finetuning)
+   - reinforcement learning w. human feedback  (사람이 개입해서 평가)
+   - 상대적으로 손이 많이 가긴 하나, 성능면에선 더 좋음
+   - Size: 175B 
+   - GPT2 부터는 가중치 오픈 하지 않음, GPT3 부터는 모델 자체도 공개 안됨. 
 
 
 
