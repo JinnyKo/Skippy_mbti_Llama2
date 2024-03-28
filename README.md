@@ -18,7 +18,8 @@
     hallucinations을 극복하진 못했다고 언급하고 있는데, LLAMA 2는 이를 극복하기 위한 new data set 을 구성한것 같다. 
     
 > ![image](https://github.com/JinnyKo/Skippy_mbti_Llama2/assets/93627969/7652f7d5-de05-4a71-ac0e-0e0c35c2b298)
-    - LLAMA2 에서도 어쨌든,,완벽하게 해결되진 않을 것 같다. 
+
+     - LLAMA2 에서도 어쨌든,,완벽하게 해결되진 않을 것 같다. 
 </details> 
      
 <details>
