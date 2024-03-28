@@ -1,4 +1,4 @@
-![image](https://github.com/JinnyKo/Skippy_mbti_Llama2/assets/93627969/62f6dfcb-ba36-4341-bec0-1a9c0ffe6143)### A chatbot service that users can talk to an AI based on 16 MBTI types.
+### A chatbot service that users can talk to an AI based on 16 MBTI types.
 
 ## 프로젝트 개요
 
