@@ -34,18 +34,19 @@
       
 - #### Overall performances
     > ![image](https://github.com/JinnyKo/Skippy_mbti_Llama2/assets/93627969/1b29b440-b111-4fd9-86fb-ee925f238f7e)
-
+    
+- 인퍼런스비용에 대하여..(추후 정리)
 </details>
  
 
   
-- 인퍼런스비용에 대하여..(추후 정리) 
 
 
-### 3. LLaMA 1 vs GPT 
+<details>
+<summary> LLaMA vs GPT </summary>
  > 두 모델 모두 Decoder only Transformer 아키텍처 라는 점에선 마이너한 부분들을 제외하면 큰 차이 없음.
 
-- #### LLaMA 1
+- #### LLaMA 
    - Unsuperviese Pretraining, 이전 까지의 토큰을 이용해서 다음 토큰을 예측하는 방식
    - public data training 
    - 데이터 규모 비교적 큼
@@ -59,6 +60,7 @@
    - 상대적으로 손이 많이 가긴 하나, 성능면에선 더 좋음
    - Size: 175B 
    - GPT2 부터는 가중치 오픈 하지 않음, GPT3 부터는 모델 자체도 공개 안됨. 
+</details>
 
 ### 4.Config
 <details>
