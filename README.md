@@ -1,6 +1,7 @@
 ###  1. 프로젝트 개요
 - LLAMA 모델을 활용하여 16개의 MBTI 타입 별 한국어 채팅 데이터를 학습시키고, 파인튜닝을 통해 각 MBTI 성격과 특성의 맞게 응답하도록 모델 학습.
 - A chatbot service that users can talk to an AI based on 16 MBTI types.
+
    
 ###  2. LLAMA 1 / LLAMA 2 논문 분석
 <details>
@@ -38,9 +39,6 @@
 - 인퍼런스비용에 대하여..(추후 정리)
 </details>
  
-
-  
-
 ###  3.  LLaMA vs GPT
 <details>
 <summary> LLaMA vs GPT </summary>
@@ -68,12 +66,16 @@
 
    ### (Llama1,2 config 같음)
 ![image](https://github.com/JinnyKo/Skippy_mbti_Llama2/assets/93627969/9350c5c4-b23f-4876-b369-615c90af55c3)
+</details>
+
+###  5.  Issues
+
+<details>
+<summary> Llama Train 이슈 정리  </summary>
+1. ![image](https://github.com/JinnyKo/Skippy_mbti_Llama2/assets/93627969/1a33b7b8-de30-4020-bb4c-bae5dc9a4b41)
 
 
 </details>
-
-
-
 
 
 
