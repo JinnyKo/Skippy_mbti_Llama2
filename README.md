@@ -41,7 +41,7 @@
 
   
 
-
+###  3.  LLaMA vs GPT
 <details>
 <summary> LLaMA vs GPT </summary>
  > 두 모델 모두 Decoder only Transformer 아키텍처 라는 점에선 마이너한 부분들을 제외하면 큰 차이 없음.
