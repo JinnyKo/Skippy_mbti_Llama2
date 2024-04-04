@@ -1,6 +1,5 @@
 import traceback
 import os 
-
 def extract_mbti_and_conversations(input_file_path):
     mbti_types = ["INTJ", "INTP", "ENTJ", "ENTP", "INFJ", "INFP", "ENFJ", "ENFP", "ISTJ", "ISFJ", "ESTJ", "ESFJ", "ISTP", "ISFP", "ESTP", "ESFP"]
     with open(input_file_path, "r", encoding="utf-8") as file:
